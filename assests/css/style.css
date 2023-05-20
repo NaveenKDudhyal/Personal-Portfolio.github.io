@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3bd;
+    --color-base: #033f47;
+    --color-base2: #022a30;
+    --color-brand: #d3f060;
+    --color-brand2: #deff58;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+body {
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base), sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+
+img {
+    width: 100%;
+}
+
+.text-brand {
+    color: #d3f060;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid rgba(105, 102, 102, 0.384);
+}
+
+.full-height-work {
+    min-height: 100vh;
+    height: 100%;
+    border-bottom: 1px solid rgba(105, 102, 102, 0.384);
+}
+
+.col-lg-8 .btn {
+    color: rgb(2, 2, 2);
+    margin-right: 10px;
+    outline: none;
+    padding: 5px 20px;
+    background-color: var(--color-brand);
+}
+
+.col-lg-8 .btn:hover {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.col-lg-8 .contactme {
+    color: white;
+}
+
+.col-lg-8 .contactme:hover {
+    color: var(--color-brand);
+}
+
+/* NavbAr */
+.navbar {
+    background-color: var(--color-base);
+}
+
+.navbar .nav-item {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav-link:hover {
+    color: #d3f060;
+}
+
+@media (min-width:992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidbar-width);
+        background: linear-gradient(rgba(3, 63, 71, 0.562), rgba(3, 63, 71, 0.425)), url(/assests/images/sidebar-img.jpg);
+        background-size: cover;
+        background-position: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        border-bottom: 2px solid #033f47;
+    }
+
+    .navbar img {
+        border: 8px solid #8a8b86;
+    }
+
+    #content-wrapper {
+        padding-left: var(--sidbar-width);
+    }
+}
+
+@media (min-width:230px) and (max-width:500px) {
+    #home .text-uppercase {
+        font-size: 20px;
+        margin-top: -92px;
+    }
+
+    #home p {
+        text-align: center;
+    }
+
+    #home .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home .buttons .contactme {
+        padding: 15px 0;
+    }
+
+    #services h5 {
+        margin-top: 35px;
+    }
+
+    .services h4 {
+        margin-left: 9px;
+    }
+
+    .services p {
+        text-align: center;
+    }
+
+    #work h1 {
+        margin-top: 31px;
+    }
+
+    #skills .row h4 {
+        padding-top: 39px;
+        padding-bottom: 22px;
+    }
+
+    #contactme h3{
+        margin-top: 24px;
+        margin-bottom: 23px;
+    }
+    #contactme .last{
+        padding: 10px 0px;
+    }
+    #contactme a {
+        display: flex;
+        justify-content: center;   
+    }
+
+}
+
+.projectlink {
+    background-color: #d3f060;
+    color: black;
+    border-radius: 5px;
+}
+
+.projectlink:hover {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.testing-para {
+    margin-bottom: 48px;
+}
+
+.line {
+    border-right: 1px dotted beige;
+    margin: 30px 10px;
+}
+
+.project1 .img-details {
+    /* border: 1px solid #c3e43f2a; */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.project1 .img-details img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* display: none; */
+    border: 3px solid #deff58;
+}
+
+.projectsss {
+    display: flex;
+    gap: 10px;
+}
+
+.project1 a {
+    color: white;
+}
+
+.project1:hover {
+    box-shadow: 1px 1px 6px #d3f060;
+    border-radius: 5px;
+}
+
+.education {
+    line-height: 10px;
+}
+#skills .col-lg-3 li{
+    color: #d3f060;
+    line-height: 40px;
+}
+
+#contactme .or{
+    color: #d3f060;
+}
